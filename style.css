@@ -1,0 +1,412 @@
+:root{
+    --main-color: blue;
+    --main-size: 18px;
+}
+
+
+/* Golbal rules */
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.container , picture, video, canvas, svg {
+    display: block;
+    object-fit: cover;
+}
+
+.container input:focus, .container textarea:focus{
+    outline: none;
+}
+/* make images easier to work with */
+.container img{
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+
+
+.container section,.container footer,.container header{
+    max-width: 2234px;
+    margin: 0 auto;
+    background-color: white;
+  
+    border-right:2px solid var(--clr-border);
+    border-left:2px solid var(--clr-border)
+  }
+.container :focus{
+    outline: none;
+}
+
+/* Utility classes     */
+/* ------------------- */
+/* way : .namepreportye-value: */
+.container{
+    /* width: 90vw; */
+    color: rgb(25, 25, 150);
+    margin-inline:auto;
+    display: grid;
+    /* font-size: 13px; */
+    line-height: 1.5;
+    min-height: 100vh;
+    /* overflow-x: hidden; */
+    
+    max-width: 2480px;
+    margin: 0 auto;
+    width: 95%;
+    
+}
+.container section{
+    width: 100%;
+}
+
+.bd-none{
+  border: none;
+}
+.inp-line{
+    position: relative;
+}
+.inp-line::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(25, 25, 150);
+    width: 10px;
+    height: 10px;
+    left: 0;
+    top: 0;
+}
+
+/* framework */
+.mb-20{
+    margin: 20px 0;
+}
+.mb-10{
+    margin: 10px 0;
+}
+.mb-5{
+    margin: 5px 0;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.txt-center{
+    text-align: center;
+}
+.txt-end{
+    text-align: end;
+}
+.d-flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.iden input {
+    width: 10%;
+    border: 1px solid blue;
+    border-top: none;
+    height: 60%;
+}
+/* .iden input:not(:last-child){
+    border-right: none;
+} */
+.iden-2 input {
+    width: 7%;
+    border: 1px solid blue;
+    border-top: none;
+}
+.iden>*{
+    flex-basis: 33%;
+}
+.bc-blue{
+    background-color: blue;
+}
+.clr-white{
+    color: #ffffff;
+}
+.container input::placeholder {
+    color: blue;
+}
+.container input[type='checkbox']{
+    border-color: blue;
+}
+.container header img{
+    width: 100%;
+}
+.inp-1{
+    width: 100%;
+    border: none;
+}
+.fw-600{
+    font-weight: 600 !important;
+}
+.grid-three{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.container textarea{
+    width: 100%;
+    max-width: 1000px;
+    height: 90px;
+    border: none;
+    overflow: hidden;
+}
+.container textarea::placeholder{
+    color: blue;
+}
+.fs-18{
+    font-size: 18px;
+}
+.remplair{
+    background-color: rgb(25, 25, 150);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+/* code */
+.section,.section-2{
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+/* page 1 */
+.page-1 header + p{    
+    line-height: 1;
+}
+.page-1 h2{
+    font-size: 18px;
+}
+.page-1 h1{
+    font-size: 22px;
+}
+.page-1> h1{
+    line-height: 1.3;
+}
+.page-1 textarea{
+    height:90px ;
+    overflow: hidden;
+    max-width: 920px;
+}
+.page-2 h1{
+    background-color: rgb(25, 25, 150);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;    
+}
+.page-2 .Demande {
+    display: flex;
+    justify-content:space-around;
+    margin:  30px 0;
+}
+.page-2 .Demande div label{
+    font-size: var(--main-size);
+    
+}
+.page-2 .Demande div input{
+    max-height: 16px;
+    height: 100%;
+    margin-right: 4px;
+}
+.page-2 .Favorbale ,
+.page-2 .temp{
+    font-size: var(--main-size);
+}
+
+.page-2 .Favorbale .PriseDecharge,
+.page-2 .temp {
+    padding-left: 2rem;
+}
+.page-2 .Favorbale .PriseDecharge div{
+    padding-left: 10px;
+}
+.page-2 .Favorbale .PriseDecharge h4{
+    font-weight: normal;
+}
+.page-2 .Favorbale .check,
+.page-2 .Defavorbale .check{
+    max-height: 16px;
+    height: 100%;
+    margin-right: 4px;
+}
+.page-2 .Favorbale .PriseDecharge .name{
+    padding-left: 2rem;
+}
+.page-2 .Favorbale .PriseDecharge .name input{
+    border: none;
+    color: blue;
+}
+.page-2 .temp input {
+    border: none;
+    color: blue;
+    max-width: 44px;
+    margin: 2px;
+}
+.page-2 .Defavorbale
+{
+    margin-top: 5px;
+}
+.page-2 .Defavorbale div{
+    padding-left: 2rem;
+}
+.page-2 .Defavorbale label{
+    font-size: 18px;
+    font-weight: bold;
+}
+.page-2 .Defavorbale textarea,
+.page-2 .observation textarea{
+    border: none;
+    
+}
+.page-2 .Defavorbale h4,
+.page-2 .observation h4 {
+    font-weight: normal !important;
+}
+.page-2 .Favorbale input >  label{
+    font-weight: bold;
+}
+.page-2 .date{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.page-2 .date input{
+    border: none;
+    color: blue;
+}
+.page-2,.page-3,.page-4{
+     margin-top: 50px;
+}
+.page-3 h1{
+    background-color: rgb(25, 25, 150);
+    color: #ffffff;
+    text-align: center;
+}
+.page-3 .code label{
+    margin: 0 10px 0 50px;
+    
+}
+.page-3 .code input{
+    border: 1px solid blue;
+    height: 30px;
+
+}
+.page-4 h3{
+    text-align: center;
+    margin: 100px 0;
+    border: 2px solid blue;
+}
+.container input[type="checkbox"]{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.control label{
+    padding-left: 22px;
+    cursor: pointer;
+    position: relative;
+}
+.control label::after{
+    /* font-family: var(--fa-style-family-classic); */
+    content: "✓";
+    font-weight: 900;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0) rotate(360deg);
+    transition: 0.3s;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    border-radius: 4px;
+}
+.control label::before{
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 2px solid grey;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+
+}
+.control label:hover::before{
+    border-color: var(--main-color);
+
+}
+.control input[type="checkbox"]:checked + label::after{
+    transform: scale(1);
+}
+.Defavorbale .control{
+    padding-left: 0 !important;
+}
+@media print  {
+    .container{
+        font-size: 11px;
+    }
+    .mb-20{
+        margin: 10px 0;
+    }
+    .container section{
+        min-height: 94vh;
+    }
+    .container section:not(:first-child){
+        margin-top: 40px;
+    }
+    .p-small{
+        font-size: 8px !important;
+    }
+    .ap{
+        font-size: 20px !important;
+    }
+    .container h1{
+        font-size: 18px !important;
+        line-height: 0.9;
+    }
+    .container .fs-18{
+        font-size: 11px;
+    }
+    .container .textarea{
+        height: 50px;
+    }
+    .container h4{
+        font-size: 12px;
+    }
+    .container label{
+        font-size: 11px !important;
+    }
+    .remplair{
+        padding: 0 5px;
+    }
+    .section,.section-2{
+        padding: 5px;
+        margin: 5px 0;
+    }
+    .page-4 h3{
+        margin: 50px auto 10px !important;
+    }
+}
